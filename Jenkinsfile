@@ -5,7 +5,7 @@ pipeline {
         stage('Run Ansible Playbook') {
             steps {
                 bat '''
-                ansible-playbook -i inventory.yml playbook.yml
+                wsl ansible-playbook -i /mnt/c/ProgramData/Jenkins/.jenkins/workspace/Ansibledeployment/inventory.yml /mnt/c/ProgramData/Jenkins/.jenkins/workspace/Ansibledeployment/playbook.yml
                 '''
             }
         }
