@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'ubuntu' }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Ansible Playbook') {
             steps {
-                sh '''
+                bat '''
                 ansible-playbook -i inventory.yml playbook.yml
                 '''
             }
