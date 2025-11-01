@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/ansible-playbooks.git'
+                git 'https://github.com/https://github.com/Revanth-sai-2006/practical10-11_s207.git//ansible-playbooks.git'
             }
         }
 
