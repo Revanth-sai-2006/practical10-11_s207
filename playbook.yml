@@ -5,7 +5,7 @@
   gather_facts: yes
 
   vars:
-    k8s_manifest_path: "../k8s/fullstackdeployment.yaml"
+    k8s_manifest_path: "k8s/fullstackdeployment.yaml"
     frontend_nodeport: 30082
     backend_nodeport: 30083
 
